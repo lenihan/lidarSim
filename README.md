@@ -19,3 +19,7 @@
 ## Compile AND Run via package.json dev script
 
 1. npm run dev
+
+## Run linter
+
+1. npx eslint . --fix
