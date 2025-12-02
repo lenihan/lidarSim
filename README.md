@@ -19,10 +19,3 @@
 ## Compile AND Run via package.json dev script
 
 1. npm run dev
-
-
-
-
-
-3. npm run dev
-
