@@ -7,8 +7,10 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
+    // "module": "nodenext",
     "target": "esnext",
+    "module": "Node16",              // ← crucial line
+    "moduleResolution": "Node16",    // ← also crucial
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
@@ -43,5 +45,5 @@
     "esModuleInterop": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }
