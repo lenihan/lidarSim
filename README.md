@@ -10,6 +10,7 @@
 6. npx tsc --init
 7. npm install --save-dev tsx
 8. npm install --save-dev eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser
+9. npm install --save-dev jest ts-jest @types/jest supertest @types/supertest
 
 ## Compile, Run
 
@@ -23,3 +24,10 @@
 ## Run linter
 
 1. npx eslint . --fix
+
+## Test endpoints
+
+* Retrieve buildings: 
+  * curl http://localhost:3000/world
+* Retrieve point cloud: 
+  * curl -X POST http://localhost:3000/scan -H "Content-Type: application/json" -d '{"carPosition": [0, 0, 0]}'
