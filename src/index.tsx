@@ -1,9 +1,11 @@
 import express from 'express';
 import bodyParser from 'body-parser'; // For parsing JSON bodies
+import cors from 'cors'
 
 const app = express();
 const port = 3000;
 
+app.use(cors())
 app.use(bodyParser.json()); // Middleware for JSON
 
 // Endpoint 1: Generate procedural world (buildings as cubes)
